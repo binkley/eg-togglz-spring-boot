@@ -1,0 +1,6 @@
+spring:
+  main:
+    show-banner: false
+
+togglz:
+  feature-enums: hm.binkley.WebFeature
