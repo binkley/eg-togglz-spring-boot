@@ -1,3 +1,7 @@
+endpoints:
+  togglz:
+    sensitive: false
+
 spring:
   main:
     show-banner: false
