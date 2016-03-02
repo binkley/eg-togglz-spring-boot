@@ -10,7 +10,7 @@
 
     <groupId>hm.binkley</groupId>
     <artifactId>eg-togglz-spring-boot</artifactId>
-    <version>0</version>
+    <version>1-SNAPSHOT</version>
     <packaging>pom</packaging>
 
     <contributors>
