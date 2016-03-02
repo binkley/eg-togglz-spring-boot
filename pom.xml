@@ -1,5 +1,8 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
+<project xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+         xmlns="http://maven.apache.org/POM/4.0.0"
+         xsi:schemaLocation="http://maven.apache.org/POM/4.0.0
+         http://maven.apache.org/xsd/maven-4.0.0.xsd">
     <modelVersion>4.0.0</modelVersion>
 
     <parent>
@@ -64,6 +67,7 @@
         <project.reporting.outputEncoding>${java.charset}</project.reporting.outputEncoding>
         <project.reporting.sourceEncoding>${java.charset}</project.reporting.sourceEncoding>
         <surefire.printSummary>false</surefire.printSummary>
+        <togglz.version>2.3.0.RC1</togglz.version>
         <versions-maven-plugin.version>2.2</versions-maven-plugin.version>
         <!-- @formatter:on -->
     </properties>
@@ -75,6 +79,11 @@
                 <artifactId>testing</artifactId>
                 <version>${project.version}</version>
                 <scope>test</scope>
+            </dependency>
+            <dependency>
+                <groupId>org.togglz</groupId>
+                <artifactId>togglz-spring-boot-starter</artifactId>
+                <version>${togglz.version}</version>
             </dependency>
         </dependencies>
     </dependencyManagement>
@@ -115,7 +124,7 @@
                         <id>enforce</id>
                         <configuration>
                             <rules>
-                                <banCircularDependencies />
+                                <banCircularDependencies/>
                                 <banDuplicateClasses>
                                     <findAllDuplicates>true
                                     </findAllDuplicates>
@@ -127,7 +136,7 @@
                                     <maxJdkVersion>${java.version}
                                     </maxJdkVersion>
                                 </enforceBytecodeVersion>
-                                <reactorModuleConvergence />
+                                <reactorModuleConvergence/>
                                 <requireJavaVersion>
                                     <version>${java.version}</version>
                                 </requireJavaVersion>
