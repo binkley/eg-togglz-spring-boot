@@ -64,7 +64,7 @@
         <project.reporting.outputEncoding>${java.charset}</project.reporting.outputEncoding>
         <project.reporting.sourceEncoding>${java.charset}</project.reporting.sourceEncoding>
         <surefire.printSummary>false</surefire.printSummary>
-        <togglz.version>2.3.0.RC1</togglz.version>
+        <togglz.version>2.3.0-SNAPSHOT</togglz.version>
         <versions-maven-plugin.version>2.2</versions-maven-plugin.version>
         <!-- @formatter:on -->
     </properties>
